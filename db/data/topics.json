@@ -1,0 +1,153 @@
+[
+  {
+    "topic": "call1",
+    "flow": [
+       {
+          "pattern": "call1",
+          "template": "What is your name?",
+          "default": true
+       },
+       {
+          "pattern": "*",
+          "preQ": "What is your name?",
+          "template": "Hello <userName>, I am HSBOT and I will help you."
+       },
+       {
+          "pattern": "ok",
+          "preQ": "Hello <userName>, I am HSBOT and I will help you.",
+          "template": "In order to support you better, I will take small survey."
+       },
+       {
+          "pattern": "ok",
+          "preQ": "In order to support you better, I will take small survey.",
+          "template": "Are you comfortable with our products?"
+       },
+       {
+          "pattern": "no",
+          "preQ": "In order to support you better, I will take small survey.",
+          "template": "Not an issue, It would be great for use if you could give time to take a survey. You can call me by typing my name HS or @HS anytime for further help."
+       },
+       {
+          "pattern": "yes",
+          "preQ": "Are you comfortable with our products?",
+          "template": "Thank you. How many times you have visited our store?"
+       },
+       {
+          "pattern": "*",
+          "preQ": "Thank you. How many times you have visited our store?",
+          "template": "Thank you for your valuable time. This is great help for us to improve more and more to serve you better. You can call me by typing my name HS or @HS anytime for further help."
+       },
+       {
+          "pattern": "no",
+          "preQ": "Are you comfortable with our products?",
+          "template": "Thank you. Can you please help me to know the reason so I can improve?"
+       },
+       {
+          "pattern": "*",
+          "preQ": "Thank you. Can you please help me to know the reason so I can improve?",
+          "template": "Thank you. I will make sure next time to help you better. You can call me by typing my name HS or @HS anytime for further help."
+       }
+    ]
+ },
+ {
+    "topic": "call2",
+    "flow": [
+       {
+          "pattern": "call2",
+          "template": "Hello <userName>, I am HSBOT and I will help you.",
+          "default": true
+       },
+       {
+          "pattern": "ok",
+          "preQ": "Hello <userName>, I am HSBOT and I will help you.",
+          "template": "In order to support you better, Please select option (Address of store, stock availibility, store timing, customer care)"
+       },
+       {
+          "pattern": "address",
+          "preQ": "In order to support you better, Please select option (Address of store, stock availibility, store timing, customer care)",
+          "template": "We are located at 23-D XXXX, Near XXXX, Opposite XXX, Pincode : XXXXXX"
+       },
+       {
+          "pattern": "ok",
+          "preQ": "We are located at 23-D XXXX, Near XXXX, Opposite XXX, Pincode : XXXXXX",
+          "template": "Thank you for contacting us. you can call me by typing my name HS or @HS anytime for further help."
+       },
+       {
+          "pattern": "stock availibility",
+          "preQ": "In order to support you better, Please select option (Address of store, stock availibility, store timing, customer care)",
+          "template": "getStockAvailable"
+       },
+       {
+          "pattern": "ok",
+          "preQ": "getStockAvailable",
+          "template": "Thank you for contacting us. you can call me by typing my name HS or @HS anytime for further help."
+       },
+       {
+          "pattern": "timing",
+          "preQ": "In order to support you better, Please select option (Address of store, stock availibility, store timing, customer care)",
+          "template": "We are open from 10:00 AM to 8:00 PM from Monday to Saturday."
+       },
+       {
+          "pattern": "ok",
+          "preQ": "We are open from 10:00 AM to 8:00 PM from Monday to Saturday.",
+          "template": "Thank you for contacting us. you can call me by typing my name HS or @HS anytime for further help."
+       },
+       {
+          "pattern": "customer care",
+          "preQ": "In order to support you better, Please select option (Address of store, stock availibility, store timing, customer care)",
+          "template": "Our Help line number is 00 000 0000 0000."
+       },
+       {
+          "pattern": "ok",
+          "preQ": "Our Help line number is 00 000 0000 0000.",
+          "template": "Thank you for contacting us. you can call me by typing my name HS or @HS anytime for further help."
+       }
+    ]
+ },
+ {
+    "topic": "command",
+    "flow": [
+       {
+          "pattern": "@HS",
+          "template": "1. Product List \n 2. Product on the way \n 3. Branch List \n 4. Customer care \n 5. Store detail"
+       },
+       {
+          "pattern": "1",
+          "preQ": "1. Product List \n 2. Product on the way \n 3. Branch List \n 4. Customer care \n 5. Store detail",
+          "template": "getProductList"
+       },
+       {
+          "pattern": "2",
+          "preQ": "1. Product List \n 2. Product on the way \n 3. Branch List \n 4. Customer care \n 5. Store detail",
+          "template": "getAwaitingProduct"
+       },
+       {
+          "pattern": "3",
+          "preQ": "1. Product List \n 2. Product on the way \n 3. Branch List \n 4. Customer care \n 5. Store detail",
+          "template": "getBranchList"
+       },
+       {
+          "pattern": "4",
+          "preQ": "1. Product List \n 2. Product on the way \n 3. Branch List \n 4. Customer care \n 5. Store detail",
+          "template": "Our Help line number is 00 000 0000 0000. We are online 24*7"
+       },
+       {
+          "pattern": "5",
+          "preQ": "1. Product List \n 2. Product on the way \n 3. Branch List \n 4. Customer care \n 5. Store detail",
+          "template": "We are located at 23-D XXXX, Near XXXX, Opposite XXX, Pincode : XXXXXX"
+       },
+       {
+          "pattern": "@HS customer care",
+          "template": "Help line number is 00 000 0000 0000"
+       },
+       {
+          "pattern": "@HS address",
+          "template": "23-D XXXX, Near XXXX, Opposite XXX, Pincode : XXXXXX"
+       },
+       {
+         "pattern": "ok",
+         "template": "Thank you for contacting us. you can call me by typing my name HS or @HS anytime for further help."
+      }
+    ]
+ }
+]

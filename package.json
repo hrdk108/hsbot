@@ -1,0 +1,21 @@
+{
+  "name": "hsbot",
+  "version": "0.0.1",
+  "description": "AIML",
+  "keywords": ["hsbot"],
+  "author": "Hardik Shah <hrdk.108@gmail.com>",
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "bin": {
+    "hsbot": "./bin/hsbot"
+  },
+  "main": "./lib/index",
+  "engines": {
+    "node": ">= 0.6.0"
+  }
+}
