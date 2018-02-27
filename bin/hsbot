@@ -1,9 +1,13 @@
+#!/usr/bin/env node
+
 /**
- * hsBot.js Supply template and your bot is ready.
+ * hsBot: Supply template and your bot is ready.
  * 
  * Hardik Shah <hrdk.108@gmail.com>
  * 
+ * MIT License
  */
+
 var readline = require('readline');
 var topicList = require('../db/data/topicList.json');
 var topics = require('../db/data/topics.json');
