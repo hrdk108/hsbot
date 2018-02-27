@@ -41,10 +41,13 @@ let topicList = require('../db/data/topicList.json'); // Your file path as per d
 let topics = require('../db/data/topics.json'); // Your file path as per define template.
 const HSBot = require('hsbot');
 const hsBot = new HSBot(topicList, topics);
+let userId = "aQ11zyTr4u7I";
  
- // userId "aQ11zyTr4u7I" (Mandatory)
- // human_text (Your answer/query, the question asked by HSBot)
-hsBot.transformAndReply("aQ11zyTr4u7I", human_text, function(err, data){
+// userId (Mandatory)
+// human_text (Your answer/query, the question asked by HSBot)
+
+
+hsBot.transformAndReply(userId, human_text, function(err, data){
   console.log("HSBot:", data);
 });
 
