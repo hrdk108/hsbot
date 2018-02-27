@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "preferGlobal": "true",
   "description": "AIML",
-  "keywords": ["hsbot"],
+  "keywords": ["hsbot", "bot", "chat", "chatbot", "AI", "ML", "AIML"],
   "author": "Hardik Shah <hrdk.108@gmail.com>",
   "devDependencies": {
     "mocha": "*",

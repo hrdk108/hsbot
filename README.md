@@ -15,6 +15,7 @@ You can find template format under db -> data -> topics.json and topicList.json
 ```
 Usage: hsbot
 ```
+Now you are ready to test.
 
 ## Requirements
 
@@ -33,7 +34,21 @@ $ npm install hsbot -g
 $ npm install
 $ make test
 ```
+## Example to integrate
 
+```
+let topicList = require('../db/data/topicList.json'); // Your file path as per define template.
+let topics = require('../db/data/topics.json'); // Your file path as per define template.
+const HSBot = require('hsbot');
+const hsBot = new HSBot(topicList, topics);
+ 
+ // userId "aQ11zyTr4u7I" (Mandatory)
+ // human_text (Your answer/query, the question asked by HSBot)
+hsBot.transformAndReply("aQ11zyTr4u7I", human_text, function(err, data){
+  console.log("HSBot:", data);
+});
+
+```
 ## License
 
 MIT License
