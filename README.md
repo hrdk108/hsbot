@@ -1,4 +1,4 @@
-# hsBot.js
+# hsBot.js		[![Build Status](https://travis-ci.org/hrdk108/hsbot.svg)](https://travis-ci.org/hrdk108/hsbot)
 
 ## Description
 	
