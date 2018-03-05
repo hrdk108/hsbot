@@ -79,10 +79,10 @@ You can use following methods.
 	```
 
 * __hsBot.getChatHistory(userId)__
-	> This function will return whole user object:
+	> This function will return whole user object along with activities.
 
 * __hsBot.getAllUserChatHistory()__
-	> This function will return all user object:
+	> This function will return all user object along with activities.
 
 
 ## License
