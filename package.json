@@ -3,15 +3,7 @@
   "version": "0.0.5",
   "preferGlobal": "true",
   "description": "A customized chatbot. Use your own template and your bot is ready.",
-  "keywords": [
-    "hsbot",
-    "bot",
-    "chat",
-    "chatbot",
-    "AI",
-    "ML",
-    "AIML"
-  ],
+  "keywords": ["hsbot", "bot", "chat", "chatbot", "AI", "ML", "AIML"],
   "author": "Hardik Shah <hrdk.108@gmail.com>",
   "devDependencies": {
     "mocha": "*",
