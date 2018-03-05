@@ -33,8 +33,10 @@ describe('UserDB', function() {
       userDb._insertUser("aQ11zyTr4u7I", "Hardik Shah", "Hardik Shah", "What is your name?", "call1")
       userDb._updateUser("aQ11zyTr4u7I", "Hardik Shah", "@hs", "What is your name?", "command");
       var user = userDb._findUser("aQ11zyTr4u7I");
-      user.activities.pattern.should.eql("@hs");
-      user.activities.topic.should.eql("command");
+      user.activities[0].pattern.should.eql("Hardik Shah");
+      user.activities[0].topic.should.eql("call1");
+      user.activities[1].pattern.should.eql("@hs");
+      user.activities[1].topic.should.eql("command");
       user.userId.should.eql("aQ11zyTr4u7I");
       expect(userDb.mem).to.have.length(1);
       

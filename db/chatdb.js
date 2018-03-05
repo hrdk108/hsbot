@@ -14,7 +14,7 @@ function ChatDB(topicList, topics){
 }
 
 ChatDB.prototype._findTopicByCommand = function(command){
-  let topic;
+  var topic;
   this.topicList.some(function(value){
     if(value.command && command && value.command.indexOf(command.toLowerCase()) > -1)
       return topic = value.topic;
@@ -23,7 +23,7 @@ ChatDB.prototype._findTopicByCommand = function(command){
 }
 
 ChatDB.prototype.getTopicFlow = function(topicName){
-  let topicFlow;
+  var topicFlow;
   this.topics.some(function(value){
     if(value.topic === topicName)
       return topicFlow = value.flow;
@@ -31,12 +31,17 @@ ChatDB.prototype.getTopicFlow = function(topicName){
   return topicFlow;
 }
 
-ChatDB.prototype.getTemplateObj = function(topicFlow, pattern, preQ) {
-  let templateObj;
+ChatDB.prototype.getTemplateObj = function(userName, topicFlow, pattern, preQ) {
+  var templateObj;
   if(pattern){
     topicFlow.some(function(obj){
       if((obj.pattern.toLowerCase() === pattern.toLowerCase() || obj.pattern === "*") &&
           (preQ ? (obj.preQ ? preQ.indexOf(obj.preQ) > -1 : true) : true))
+        return templateObj = obj;
+    });
+  } else if(userName) {
+    topicFlow.some(function(obj){
+      if(obj.redirect === true)
         return templateObj = obj;
     });
   } else {
@@ -49,7 +54,7 @@ ChatDB.prototype.getTemplateObj = function(topicFlow, pattern, preQ) {
 }
 
 ChatDB.prototype._findDefaultTopic = function(){
-  let topic;
+  var topic;
   this.topicList.some(function(value){
     if(value.default === true)
       return topic = value.topic;
@@ -57,18 +62,8 @@ ChatDB.prototype._findDefaultTopic = function(){
   return topic;
 }
 
-ChatDB.prototype._findRedirectedTopic = function(){
-  let topic;
-  this.topicList.some(function(value){
-    if(value.redirect === true){
-      return topic = value.topic;
-    }
-  });
-  return topic;
-}
-
 ChatDB.prototype.getDefaultMessage = function(){
-  let defaultMessage;
+  var defaultMessage;
   this.topicList.some(function(value){
     if(value.hasOwnProperty("default_message"))
       return defaultMessage = value.default_message;

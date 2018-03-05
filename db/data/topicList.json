@@ -1,20 +1,20 @@
 [
   {
+    "default_message": "Thank you for contacting us. you can call me by typing @hs anytime for further help."
+  },
+  {
     "command": ["call1"],
     "topic": "call1",
     "default": true
- },
- {
+  },
+  {
     "command": ["call2"],
     "topic": "call2",
-    "default": false,
-    "redirect": true
- },
- {
+    "default": false
+  },
+  {
     "command": ["@hs"],
     "topic": "command",
     "default": false
- },{
-   "default_message": "Thank you for contacting us. you can call me by typing my name HS or @HS anytime for further help."
- }
+  }
 ]

@@ -20,7 +20,9 @@ var rl = readline.createInterface(process.stdin, process.stdout)
 
 rl.on('line', function(line) {
   if (line && line.trim() === 'exit') return rl.emit('close');
-  hsBot.transformAndReply("aQ11zyTr4u7I", line, function(err, data){
+  var userId = "aQ11zyTr4u7I";
+  var userName;
+  hsBot.transformAndReply(userId, userName, function(err, data){
     console.log(bot + data);
     rl.setPrompt(you);
     rl.prompt();
@@ -28,7 +30,8 @@ rl.on('line', function(line) {
 });
 
 rl.on('close', function() {
-  console.log('\n' + bot +'Nice chat. Have a great time ahead!');
+  var analysis = hsBot.getUserAnalysis("aQ11zyTr4u7I");
+  console.log('\n' + bot +'Nice chat. Have a great time ahead! ' + analysis);
   process.exit(0);
 });
 

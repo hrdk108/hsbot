@@ -25,12 +25,13 @@ UserDB.prototype._insertUser = function(userId, userName, pattern, preQ, topicNa
   let infoDict = {
     userName: userName,
     userId: userId,
-    activities: {
+    loggedIn: new Date().getTime(),
+    activities: [{
       pattern: pattern,
       preQ: preQ,
-      timestamp: new Date().getTime(),
+      ut: new Date().getTime(),
       topic: topicName
-    }
+    }]
   };
   this.mem.push(infoDict);
   return this.mem;
@@ -39,10 +40,13 @@ UserDB.prototype._insertUser = function(userId, userName, pattern, preQ, topicNa
 UserDB.prototype._updateUser = function(userId, userName, pattern, preQ, topicName){
   this.mem.some(function(userObj){
     if(userObj.userId === userId){
-      userObj.activities.preQ = preQ;
-      userObj.activities.pattern = pattern;
-      userObj.activities.topic = topicName,
-      userObj.activities.timestamp = new Date().getTime(),
+      var activityDict = {
+        pattern: pattern,
+        preQ: preQ,
+        ut: new Date().getTime(),
+        topic: topicName
+      }
+      userObj.activities.push(activityDict);
       userObj.userName = userObj.userName ? userObj.userName : userName;
       return true;
     }

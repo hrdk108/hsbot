@@ -8,7 +8,7 @@ You can find template format under db -> data -> topics.json and topicList.json
 ## Features
 
 - You can have your own bot.
-- You can instigrate with your system as well.
+- You can integrate with your system as well.
 
 ## Usage
 
@@ -19,8 +19,8 @@ Now you are ready to test.
 
 ## Requirements
 
-- NPM (http://npmjs.org/)
-- Node.js >=0.6 (http://nodejs.org/)
+- [NPM](http://npmjs.org/)
+- [Node.js >=0.6](http://nodejs.org/)
 
 ## Install
 
@@ -34,44 +34,57 @@ $ npm install hsbot -g
 $ npm install
 $ make test
 ```
-## Example to integrate
+
+## Points to keep in mind and example to integrate
+
+* __userId__: UserId is mandatory.
+* __userName__: *(optional)* If pass it will not ask you about your name. If not passe, hsbot will ask you about your name first.
+* __topicList__ and __topics__: These two files you need to pass to the constructor of hsbot. You can find template under __hsbot -> db -> data__
+* __Template__: [topicList.json](https://github.com/hrdk108/hsbot/blob/master/db/data/topicList.json) and [topics.json](https://github.com/hrdk108/hsbot/blob/master/db/data/topics.json)
+
+__Example:__
 
 ```
-let topicList = require('../db/data/topicList.json'); // Your file path as per define template.
-let topics = require('../db/data/topics.json'); // Your file path as per define template.
+var topicList = require('../db/data/topicList.json'); // Your file path as per defined template.
+var topics = require('../db/data/topics.json'); // Your file path as per defined template.
 const HSBot = require('hsbot');
 const hsBot = new HSBot(topicList, topics);
-let userId = "aQ11zyTr4u7I";
+var userId = "aQ11zyTr4u7I";
+var userName;
  
 // userId (Mandatory)
+// userName (User Name)
 // human_text (Your answer/query, the question asked by HSBot)
 
 
-hsBot.transformAndReply(userId, human_text, function(err, data){
+hsBot.transformAndReply(userId, userName, human_text, function(err, data){
   console.log("HSBot:", data);
 });
 
 ```
+
+## Analysis
+
+There are multiples methods are available to analyze user's activities.
+You can use following methods.
+
+* __hsBot.getUserAnalysis(userId)__
+	> This function will return analysis of particular user as follow:
+	```
+	{
+		"timeSpent": "100261",
+		"frequentBotText": "Thank you for contacting us. you can call me by typing @hs anytime for further help.",
+		"frequentUserText": "@hs"
+	}
+	```
+
+* __hsBot.getChatHistory(userId)__
+	> This function will return whole user object:
+
+* __hsBot.getAllUserChatHistory()__
+	> This function will return all user object:
+
+
 ## License
 
-MIT License
-
-Copyright (c) 2018 Hardik Shah
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+[MIT License](https://github.com/hrdk108/hsbot/blob/master/LICENSE)

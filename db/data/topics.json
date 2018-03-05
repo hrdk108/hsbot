@@ -13,6 +13,12 @@
           "template": "Hello <userName>, I am HSBOT and I will help you."
        },
        {
+         "pattern": "*",
+         "template": "Hello <userName>, I am HSBOT and I will help you.",
+         "preQ": "*",
+         "redirect": true
+       },
+       {
           "pattern": "ok",
           "preQ": "Hello <userName>, I am HSBOT and I will help you.",
           "template": "In order to support you better, I will take small survey."
@@ -25,7 +31,7 @@
        {
           "pattern": "no",
           "preQ": "In order to support you better, I will take small survey.",
-          "template": "Not an issue, It would be great for use if you could give time to take a survey. You can call me by typing my name HS or @HS anytime for further help."
+          "template": "Not an issue, It would be great for us if you could give time to take a survey. You can call me by typing my name HS or @HS anytime for further help."
        },
        {
           "pattern": "yes",
