@@ -4,5 +4,7 @@ node_js:
   - 7
   - 8
   - 9
-after_success: npm run coveralls
+after_script:
+  - npm run test-cov
+  - cat ./coverage/lcov.info | coveralls
 sudo: false
