@@ -1,8 +1,6 @@
 
 <h1 align="center">
-	<br>
-	<img width="320" src="logo.png" alt="hsbot.js">
-	<br>
+	<img width="450" src="logo.png" alt="hsbot.js">
 	<br>
 </h1>
 
