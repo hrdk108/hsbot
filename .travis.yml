@@ -1,10 +1,10 @@
 language: node_js
 node_js:
+  - node
   - 6
-  - 7
   - 8
   - 9
 after_script:
-  - npm run test-cov
+  - npm test
   - cat ./coverage/lcov.info | coveralls
 sudo: false

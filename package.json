@@ -2,7 +2,6 @@
   "name": "hsbot",
   "version": "0.0.5",
   "license": "MIT",
-  "preferGlobal": "true",
   "description": "A customized chatbot. Use your own template and your bot is ready.",
   "keywords": ["hsbot", "bot", "chat", "chatbot", "AI", "ML", "AIML"],
   "author": "Hardik Shah <hrdk.108@gmail.com>",
@@ -16,9 +15,12 @@
     "type": "git",
     "url": "https://github.com/hrdk108/hsbot.git"
   },
+  "bugs": {
+    "url": "https://github.com/hrdk108/hsbot/issues"
+  },
   "homepage": "https://github.com/hrdk108/hsbot",
   "scripts": {
-    "test": "mocha",
+    "test": "npm run test-cov",
     "test-cov": "istanbul cover _mocha"
   },
   "files": [
