@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.org/hrdk108/hsbot.svg)](https://travis-ci.org/hrdk108/hsbot)
 [![Coverage Status](https://coveralls.io/repos/github/hrdk108/hsbot/badge.svg?branch=master)](https://coveralls.io/github/hrdk108/hsbot?branch=master)
-![npm](https://img.shields.io/npm/dt/hsbot.svg?style=plastic)
-![npm](https://img.shields.io/npm/v/hsbot.svg?style=plastic)
+[![NPM Download](https://img.shields.io/npm/dt/hsbot.svg?style=plastic)](https://www.npmjs.com/package/hsbot)
+[![NPM Version](https://img.shields.io/npm/v/hsbot.svg?style=plastic)](https://www.npmjs.com/package/hsbot)
 
 ## Description
 	
