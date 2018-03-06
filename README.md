@@ -1,7 +1,16 @@
+
+<h1 align="center">
+	<br>
+	<img width="320" src="logo.png" alt="hsbot.js">
+	<br>
+	<br>
+</h1>
+
 [![Build Status](https://travis-ci.org/hrdk108/hsbot.svg)](https://travis-ci.org/hrdk108/hsbot)
 [![Coverage Status](https://coveralls.io/repos/github/hrdk108/hsbot/badge.svg?branch=master)](https://coveralls.io/github/hrdk108/hsbot?branch=master)
 [![NPM Download](https://img.shields.io/npm/dt/hsbot.svg?style=plastic)](https://www.npmjs.com/package/hsbot)
 [![NPM Version](https://img.shields.io/npm/v/hsbot.svg?style=plastic)](https://www.npmjs.com/package/hsbot)
+
 
 ## Description
 	
@@ -10,8 +19,8 @@ You can find template format under db -> data -> topics.json and topicList.json
 
 ## Features
 
-- You can have your own bot.
-- You can integrate with your system as well.
+- You can have your own bot by your custom template.
+- You can integrate with your system easily.
 
 ## Usage
 
