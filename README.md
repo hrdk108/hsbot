@@ -1,4 +1,6 @@
-# hsBot.js		[![Build Status](https://travis-ci.org/hrdk108/hsbot.svg)](https://travis-ci.org/hrdk108/hsbot)	![npm](https://img.shields.io/npm/dt/hsbot.svg?style=plastic)	![npm](https://img.shields.io/npm/v/hsbot.svg?style=plastic)	[![Coverage Status](https://coveralls.io/repos/github/hrdk108/hsbot/badge.svg?branch=master)](https://coveralls.io/github/hrdk108/hsbot?branch=master)
+# hsBot.js
+
+[![Build Status](https://travis-ci.org/hrdk108/hsbot.svg)](https://travis-ci.org/hrdk108/hsbot)  ![npm](https://img.shields.io/npm/dt/hsbot.svg?style=plastic)  ![npm](https://img.shields.io/npm/v/hsbot.svg?style=plastic)  [![Coverage Status](https://coveralls.io/repos/github/hrdk108/hsbot/badge.svg?branch=master)](https://coveralls.io/github/hrdk108/hsbot?branch=master)
 
 ## Description
 	
