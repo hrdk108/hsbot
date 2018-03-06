@@ -1,4 +1,3 @@
-
 <h1 align="center">
 	<img width="450" src="logo.png" alt="hsbot.js">
 	<br>
@@ -13,12 +12,12 @@
 ## Description
 	
 Pass your custom template and you are ready to use your own bot.
-You can find template format under db -> data -> topics.json and topicList.json
 
 ## Features
 
-- You can have your own bot by your custom template.
+- Pass custom template. Template should be in format as defined.
 - You can integrate with your system easily.
+- Analyze user chat history.
 
 ## Usage
 
@@ -26,11 +25,6 @@ You can find template format under db -> data -> topics.json and topicList.json
 Usage: hsbot
 ```
 Now you are ready to test.
-
-## Requirements
-
-- [NPM](http://npmjs.org/)
-- [Node.js >=0.6](http://nodejs.org/)
 
 ## Install
 
@@ -75,7 +69,7 @@ hsBot.transformAndReply(userId, userName, human_text, function(err, data){
 
 ## Analysis
 
-There are multiples methods are available to analyze user's activities.
+There are multiples APIs are available to analyze user's activities.
 You can use following methods.
 
 * __hsBot.getUserAnalysis(userId)__
