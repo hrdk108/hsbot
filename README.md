@@ -31,13 +31,6 @@ Usage: hsbot
 ```
 Now you are ready to use hsbot.
 
-## Tests
-
-```
-$ npm install
-$ make test
-```
-
 ## Points to keep in mind and example to integrate
 
 * __userId__: UserId is mandatory.

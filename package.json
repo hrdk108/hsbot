@@ -34,7 +34,8 @@
     "analysis/",
     "db/",
     "lib/",
-    "util/"
+    "util/",
+    "bin/hsbot"
   ],
   "bin": {
     "hsbot": "./bin/hsbot"
