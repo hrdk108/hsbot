@@ -1,6 +1,6 @@
 <h1 align="center">
-	<img width="450" src="logo.png" alt="hsbot.js">
-	<br>
+  <img width="450" src="logo.png" alt="hsbot.js">
+  <br>
 </h1>
 
 [![Build Status](https://travis-ci.org/hrdk108/hsbot.svg)](https://travis-ci.org/hrdk108/hsbot)
@@ -10,7 +10,7 @@
 
 
 ## Description
-	
+
 Pass your custom template and you are ready to use your own bot.
 
 ## Features
