@@ -19,18 +19,17 @@ Pass your custom template and you are ready to use your own bot.
 - You can integrate with your system easily.
 - Analyze user chat history.
 
-## Usage
-
-```
-Usage: hsbot
-```
-Now you are ready to test.
-
 ## Install
 
 ```
 $ npm install hsbot -g
 ```
+## Usage
+
+```
+Usage: hsbot
+```
+Now you are ready to use hsbot.
 
 ## Tests
 
