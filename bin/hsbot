@@ -22,7 +22,7 @@ rl.on('line', function(line) {
   if (line && line.trim() === 'exit') return rl.emit('close');
   var userId = "aQ11zyTr4u7I";
   var userName;
-  hsBot.transformAndReply(userId, userName, function(err, data){
+  hsBot.transformAndReply(userId, userName, line, function(err, data){
     console.log(bot + data);
     rl.setPrompt(you);
     rl.prompt();

@@ -13,7 +13,7 @@
     "default": false
   },
   {
-    "command": ["@hs"],
+    "command": ["@hs", "@HS customer care", "@HS address"],
     "topic": "command",
     "default": false
   }

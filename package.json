@@ -42,5 +42,6 @@
   "main": "./lib/index",
   "engines": {
     "node": ">= 6.2.0"
-  }
+  },
+  "dependencies": {}
 }

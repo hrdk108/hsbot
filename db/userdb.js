@@ -17,6 +17,8 @@ UserDB.prototype._findUser = function(userId){
   this.mem.some(function(userObj){
     if(userObj.userId === userId)
       return user = userObj;
+    else
+      return false;
   });
   return user;
 }
@@ -49,6 +51,8 @@ UserDB.prototype._updateUser = function(userId, userName, pattern, preQ, topicNa
       userObj.activities.push(activityDict);
       userObj.userName = userObj.userName ? userObj.userName : userName;
       return true;
+    } else {
+      return false;
     }
   });
   return;

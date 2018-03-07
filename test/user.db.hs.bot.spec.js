@@ -41,6 +41,13 @@ describe('UserDB', function() {
       expect(userDb.mem).to.have.length(1);
       
     });
+
+    it('Should not return anything if user not exists.', function() {
+      var userDb = new UserDB();
+      var updatedUser = userDb._updateUser("aQ11zyTr4u44", "Hardik Shah", "@hs", "What is your name?", "command");
+      should.not.exist(updatedUser);
+      
+    });
   });
 
   describe('._findUser()', function() {

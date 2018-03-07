@@ -41,6 +41,8 @@ Analysis.prototype.getFrequentText = function(activities){
       if(max <= parseInt(countArr[key][key1])){
         max = countArr[key][key1];
         t = key1;
+      } else {
+        max = max;
       }
     }
     frequentArr.push({"text": t, type: key});
