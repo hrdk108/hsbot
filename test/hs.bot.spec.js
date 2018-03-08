@@ -107,17 +107,6 @@ describe('Bot', function() {
       });
     });
 
-    it('Should return default message if bot not able to find any string.', function() {
-      var bot = new Bot(topicList, topics);
-      var postStringDict = {
-          template: null,
-          query: null,
-          userName: null
-        }
-      var response = bot._postTransform(postStringDict);
-      response.should.eql("Thank you for contacting us. you can call me by typing @hs anytime for further help.");
-    });
-
     describe('Negative test cases', function() {
       it('Should return undefined if default message not found.', function() {
         var topicList = dummyData.witout_defaultMessage_topicList;
