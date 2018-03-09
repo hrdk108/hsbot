@@ -7,16 +7,16 @@
  */
 
 var Util = {
-    string2literal : string2literal
-}
+  string2literal : string2literal
+};
 
 function string2literal(value){
   var maps = {
-   "NaN": NaN,
-   "null": null,
-   "undefined": undefined,
-   "Infinity": Infinity,
-  }
+    "NaN": NaN,
+    "null": null,
+    "undefined": undefined,
+    "Infinity": Infinity,
+  };
   return ((value in maps) ? maps[value] : value);
 }
 

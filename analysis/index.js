@@ -7,7 +7,7 @@
  */
 
 function Analysis(){
-  
+
 }
 
 Analysis.prototype._analyzed = function(userData){
@@ -23,7 +23,7 @@ Analysis.prototype._analyzed = function(userData){
       analyzedData.frequentUserText = obj.text;
   });
   return analyzedData;
-}
+};
 
 Analysis.prototype.getFrequentText = function(activities){
   var countArr = {
@@ -50,6 +50,6 @@ Analysis.prototype.getFrequentText = function(activities){
   }
 
   return frequentArr;
-}
+};
 
 module.exports = Analysis;

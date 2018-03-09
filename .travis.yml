@@ -4,5 +4,5 @@ node_js:
   - 6
   - 8
   - 9
-script: make test-coveralls
+after_script: make test-coveralls
 sudo: false

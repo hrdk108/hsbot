@@ -21,7 +21,7 @@ UserDB.prototype._findUser = function(userId){
       return false;
   });
   return user;
-}
+};
 
 UserDB.prototype._insertUser = function(userId, userName, pattern, preQ, topicName){
   let infoDict = {
@@ -37,7 +37,7 @@ UserDB.prototype._insertUser = function(userId, userName, pattern, preQ, topicNa
   };
   this.mem.push(infoDict);
   return this.mem;
-}
+};
 
 UserDB.prototype._updateUser = function(userId, userName, pattern, preQ, topicName){
   this.mem.some(function(userObj){
@@ -47,7 +47,7 @@ UserDB.prototype._updateUser = function(userId, userName, pattern, preQ, topicNa
         preQ: preQ,
         ut: new Date().getTime(),
         topic: topicName
-      }
+      };
       userObj.activities.push(activityDict);
       userObj.userName = userObj.userName ? userObj.userName : userName;
       return true;
@@ -56,6 +56,6 @@ UserDB.prototype._updateUser = function(userId, userName, pattern, preQ, topicNa
     }
   });
   return;
-}
+};
 
 module.exports = UserDB;

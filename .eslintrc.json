@@ -1,0 +1,36 @@
+{
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "module"
+  },
+  "rules": {
+    "eqeqeq": 0,
+    "guard-for-in": 0,
+    "indent": [
+      2,
+      2
+    ],
+    "no-caller": 2,
+    "no-undef": 2,
+    "no-unused-vars": 2,
+    "no-eval": 2,
+    "comma-style": [
+      2,
+      "last"
+    ],
+    "semi": 2,
+    "no-eq-null": 0,
+    "no-unused-expressions": 0,
+    "no-loop-func": 2,
+    "dot-notation": 0,
+    "valid-jsdoc": ["error", {
+      "requireReturn": false,
+      "requireReturnDescription": false,
+      "requireReturnType": false
+    }]
+  }
+}

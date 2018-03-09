@@ -36,7 +36,7 @@ Now you are ready to use hsbot.
 ## Points to keep in mind and example to integrate
 
 * __userId__: UserId is mandatory.
-* __userName__: *(optional)* If pass it will not ask you about your name. If not passe, hsbot will ask you about your name first.
+* __userName__: *(optional)* If pass it will not ask you about your name. If not, hsbot will ask you about your name first.
 * __topicList__ and __topics__: These two files you need to pass to the constructor of hsbot. You can find template under __hsbot -> db -> data__
 * __Template__: [topicList.json](https://github.com/hrdk108/hsbot/blob/master/db/data/topicList.json) and [topics.json](https://github.com/hrdk108/hsbot/blob/master/db/data/topics.json)
 

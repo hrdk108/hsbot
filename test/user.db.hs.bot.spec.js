@@ -22,7 +22,7 @@ describe('UserDB', function() {
   describe('._insertUser()', function() {
     it('Should insert user.', function() {
       var userDb = new UserDB();
-      userDb._insertUser("aQ11zyTr4u7I", "Hardik Shah", "Hardik Shah", "What is your name?", "call1")
+      userDb._insertUser("aQ11zyTr4u7I", "Hardik Shah", "Hardik Shah", "What is your name?", "call1");
       expect(userDb.mem).to.have.length(1);
     });
   });
@@ -30,7 +30,7 @@ describe('UserDB', function() {
   describe('._updateUser()', function() {
     it('Should update user.', function() {
       var userDb = new UserDB();
-      userDb._insertUser("aQ11zyTr4u7I", "Hardik Shah", "Hardik Shah", "What is your name?", "call1")
+      userDb._insertUser("aQ11zyTr4u7I", "Hardik Shah", "Hardik Shah", "What is your name?", "call1");
       userDb._updateUser("aQ11zyTr4u7I", "Hardik Shah", "@hs", "What is your name?", "command");
       var user = userDb._findUser("aQ11zyTr4u7I");
       user.activities[0].pattern.should.eql("Hardik Shah");
@@ -53,7 +53,7 @@ describe('UserDB', function() {
   describe('._findUser()', function() {
     it('Should find user.', function() {
       var userDb = new UserDB();
-      userDb._insertUser("aQ11zyTr4u7I", "Hardik Shah", "Hardik Shah", "What is your name?", "call1")
+      userDb._insertUser("aQ11zyTr4u7I", "Hardik Shah", "Hardik Shah", "What is your name?", "call1");
       var user = userDb._findUser("aQ11zyTr4u7I");
       user.userId.should.eql("aQ11zyTr4u7I");
       expect(userDb.mem).to.have.length(1);
