@@ -34,6 +34,7 @@ describe('Bot', function() {
       var bot = new Bot(topicList, topics);
       bot.transformAndReply(null, null, null, function(err, response){
         err.should.eql("UserId is not defined.");
+        should.not.exist(response);
       });
     });
 

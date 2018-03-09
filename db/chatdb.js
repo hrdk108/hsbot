@@ -22,7 +22,7 @@ ChatDB.prototype._findTopicByCommand = function(command){
       return false;
   });
   return topic;
-}
+};
 
 ChatDB.prototype.getTopicFlow = function(topicName){
   var topicFlow;
@@ -33,7 +33,7 @@ ChatDB.prototype.getTopicFlow = function(topicName){
       return false;
   });
   return topicFlow;
-}
+};
 
 ChatDB.prototype.getTemplateObj = function(userName, topicFlow, pattern, preQ) {
   var templateObj;
@@ -61,7 +61,7 @@ ChatDB.prototype.getTemplateObj = function(userName, topicFlow, pattern, preQ) {
     });
   }
   return templateObj;
-}
+};
 
 ChatDB.prototype._findDefaultTopic = function(){
   var topic;
@@ -72,7 +72,7 @@ ChatDB.prototype._findDefaultTopic = function(){
       return false;
   });
   return topic;
-}
+};
 
 ChatDB.prototype.getDefaultMessage = function(){
   var defaultMessage;
@@ -83,6 +83,6 @@ ChatDB.prototype.getDefaultMessage = function(){
       return false;
   });
   return defaultMessage;
-}
+};
 
 module.exports = ChatDB;

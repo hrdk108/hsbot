@@ -6,7 +6,6 @@
  * MIT License
  */
 
-var should = require('chai').should();
 var expect = require('chai').expect;
 var Bot = require('../lib/index');
 var Analysis = require('../analysis');
@@ -20,14 +19,14 @@ describe('Analysis', function() {
     it('Initiate by welcoming user by asking name', function() {
       var bot = new Bot(topicList, topics);
       bot.transformAndReply("aQ11zyTr4u7I", null, null, function(err, response){
-        response.should.eql("What is your name?");
+        expect(response).to.match(/^What is your name?/);
       });
     });
 
     it('Should remember your name.', function() {
       var bot = new Bot(topicList, topics);
       bot.transformAndReply("aQ11zyTr4u7I", null, "Hardik Shah", function(err, response){
-        response.should.eql("Hello Hardik Shah, I am HSBOT and I will help you.");
+        expect(response).to.match(/^Hello Hardik Shah, I am HSBOT and I will help you./);
       });
     });
 
