@@ -14,6 +14,7 @@
 ## Description
 
 Pass your custom template and you are ready to use your own bot.
+For detailed document see this [hsbot-document](https://hrdk108.github.io/hsbot/)
 
 ## Features
 
