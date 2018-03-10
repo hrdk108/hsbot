@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/hrdk108/hsbot/issues"
   },
-  "homepage": "https://github.com/hrdk108/hsbot",
+  "homepage": "https://hrdk108.github.io/hsbot/",
   "scripts": {
     "test": "make test && make lint",
     "jsdoc": "jsdoc -c docs/jsdoc.json"
