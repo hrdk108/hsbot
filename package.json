@@ -1,6 +1,6 @@
 {
   "name": "hsbot",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "license": "MIT",
   "description": "A customized chatbot. Use your own template and your bot is ready.",
   "keywords": [
@@ -18,7 +18,8 @@
     "chai": "*",
     "coveralls": "^3.0.0",
     "istanbul": "^0.4.0",
-    "eslint": "4.18.2"
+    "eslint": "4.18.2",
+    "jsdoc": "3.5.5"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,8 @@
   },
   "homepage": "https://github.com/hrdk108/hsbot",
   "scripts": {
-    "test": "make test && make lint"
+    "test": "make test && make lint",
+    "jsdoc": "jsdoc -c docs/jsdoc.json"
   },
   "files": [
     "analysis/",
