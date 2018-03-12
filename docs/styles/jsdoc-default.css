@@ -124,10 +124,21 @@ blockquote {
   padding: 0 30px 20px 30px;
 }
 
-header {
-  display: block
+.header {
+  display: block;
+  background-color: #F0F0F0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 53px;
 }
 
+.custom {
+  font-size: 30px;
+  padding-top: 10px;
+  position: fixed;
+  
+}
 section {
   display: block;
   background-color: #fff;
@@ -229,6 +240,7 @@ nav {
   height: 100%;
   padding: 10px;
   border-right: 1px solid #eee;
+  margin-top: 53px;
   /* box-shadow: 0 0 3px rgba(0,0,0,0.1); */
 }
 
