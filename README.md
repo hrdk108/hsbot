@@ -11,17 +11,17 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/hrdk108/hsbot.svg?style=plastic)](https://greenkeeper.io/)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://github.com/hrdk108/hsbot/blob/master/LICENSE)
 
+## Description
+
+A customizable bot, it's hsbot.Pass your custom template and you are ready to use your own bot.
+For detailed document see this [HSBOT document](https://hrdk108.github.io/hsbot/)
+
 ## Quick demo using terminal
 
 ![DEMO](./docs/img/hsbot_terminal_demo.gif)
 
 ## Quick demo: How to integrate into project
 ![DEMO](./docs/img/hsbot_project_demo.gif)
-
-## Description
-
-A customizable bot, it's hsbot.Pass your custom template and you are ready to use your own bot.
-For detailed document see this [HSBOT document](https://hrdk108.github.io/hsbot/)
 
 ## Features
 
@@ -38,7 +38,7 @@ $ npm i install hsbot
 ```
 ## Usage
 ```
-Usage: hsbot
+$ hsbot
 ```
 Now you are ready to use hsbot.
 
