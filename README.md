@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img width="450" src="./docs/img/logo.png" alt="hsbot.js">
+  <img width="450" src="./docs/img/hsbot_logo_transparent.png" alt="hsbot.js">
   <br>
 </h1>
 
