@@ -22,6 +22,6 @@
         "encoding": "utf8",
         "private": true,
         "recurse": true,
-        "template": "docs/theme"
+        "template": "node_modules/minami"
     }
 }

@@ -19,7 +19,8 @@
     "coveralls": "^3.0.0",
     "istanbul": "^0.4.0",
     "eslint": "4.18.2",
-    "jsdoc": "3.5.5"
+    "jsdoc": "3.5.5",
+    "minami": "1.2.3"
   },
   "repository": {
     "type": "git",

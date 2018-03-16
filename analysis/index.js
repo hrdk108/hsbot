@@ -17,10 +17,12 @@ Analysis.prototype._analyzed = function(userData){
   analyzedData.timeSpent = lastActivity - loggedInTime;
   var frequentArr = this.getFrequentText(userData.activities);
   frequentArr.forEach(function(obj){
-    if(obj.type == "question")
+    if(obj.type == "question"){
       analyzedData.frequentBotText = obj.text;
-    if(obj.type == "command")
+    }
+    if(obj.type == "command"){
       analyzedData.frequentUserText = obj.text;
+    }
   });
   return analyzedData;
 };

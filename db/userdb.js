@@ -15,10 +15,11 @@ function UserDB(){
 UserDB.prototype._findUser = function(userId){
   let user;
   this.mem.some(function(userObj){
-    if(userObj.userId === userId)
+    if(userObj.userId === userId){
       return user = userObj;
-    else
+    } else{
       return false;
+    }
   });
   return user;
 };
@@ -55,7 +56,6 @@ UserDB.prototype._updateUser = function(userId, userName, pattern, preQ, topicNa
       return false;
     }
   });
-  return;
 };
 
 module.exports = UserDB;
