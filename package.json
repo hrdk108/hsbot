@@ -1,6 +1,6 @@
 {
   "name": "hsbot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "A customized chatbot. Use your own template and your bot is ready.",
   "keywords": [
@@ -18,7 +18,7 @@
     "chai": "*",
     "coveralls": "^3.0.0",
     "istanbul": "^0.4.0",
-    "eslint": "4.18.2",
+    "eslint": "4.19.0",
     "jsdoc": "3.5.5",
     "minami": "1.2.3"
   },
