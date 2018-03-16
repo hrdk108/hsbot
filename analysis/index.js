@@ -48,7 +48,8 @@ Analysis.prototype.getFrequentText = function(activities){
       }
     }
     frequentArr.push({"text": t, type: key});
-    max = 0, t= "";
+    max = 0;
+    t= "";
   }
 
   return frequentArr;
