@@ -1,6 +1,6 @@
 {
   "name": "hsbot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "A customizable chatbot or bot. Import template and your bot is ready. It's hsbot.js",
   "keywords": [
