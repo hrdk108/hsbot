@@ -2,15 +2,17 @@
   "name": "hsbot",
   "version": "1.0.2",
   "license": "MIT",
-  "description": "A customized chatbot. Use your own template and your bot is ready.",
+  "description": "A customizable chatbot or bot. Import template and your bot is ready. It's hsbot.js",
   "keywords": [
     "hsbot",
     "bot",
     "chat",
     "chatbot",
     "AI",
-    "ML",
-    "AIML"
+    "customizable",
+    "custom",
+    "hsbot.js",
+    "template"
   ],
   "author": "Hardik Shah <hrdk.108@gmail.com>",
   "devDependencies": {
@@ -18,9 +20,9 @@
     "chai": "*",
     "coveralls": "^3.0.0",
     "istanbul": "^0.4.0",
-    "eslint": "4.19.0",
-    "jsdoc": "3.5.5",
-    "minami": "1.2.3"
+    "eslint": "^4.19.0",
+    "jsdoc": "^3.5.5",
+    "minami": "^1.2.3"
   },
   "repository": {
     "type": "git",
