@@ -13,7 +13,7 @@
 
 ## Description
 
-A customizable bot, it's hsbot.Pass your custom template and you are ready to use your own bot.
+A customizable bot, it's hsbot. Pass your custom template and you are ready to use your own bot.
 For detailed document see this [HSBOT document](https://hrdk108.github.io/hsbot/)
 
 ## Quick demo using terminal
